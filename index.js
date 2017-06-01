@@ -19,5 +19,6 @@ app.get('/getTest', function(req, res) {
 });
 
 app.get('/', function(req, res) {
+	console.log("Adding log ...");
   	res.status(200).json({"token": token}); 
 });
