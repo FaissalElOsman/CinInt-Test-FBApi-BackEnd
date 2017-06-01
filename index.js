@@ -12,7 +12,7 @@ app.listen(app.get('port'), function() {
 });
 
 app.get('/getTest', function(req, res) {
-	var query 			  = require('url').parse(req.url,true).query;
+	var query = require('url').parse(req.url,true).query;
 	token = query.token;
 	console.log("Adding log ...");
   	res.status(200).json({"success": yes}); 
