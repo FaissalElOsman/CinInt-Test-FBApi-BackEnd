@@ -11,4 +11,5 @@ app.listen(app.get('port'), function() {
 
 app.get('/getTest', function(req, res) {
   	res.status(200).json({"success": yes}); 
+  	console.log("Adding log ...");
 });
