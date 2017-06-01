@@ -1,27 +1,19 @@
 {
-  "name": "CinInt-Test-FBApi-BackEnd",
-  "version": "0.0.1",
-  "description": "A server that receives FBtoken and provides it on requests",
+  "name": "simple-server",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
   "engines": {
     "node": "5.9.1"
   },
   "main": "index.js",
   "scripts": {
-    "start": "node ./code/index.js"
+    "start": "node ./index.js"
   },
   "dependencies": {
     "express": "4.13.3",
     "body-parser":"1.15.2",
-    "request":"2.79.0",
+    "twilio":"2.11.1",
+    "morgan":"1.8.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://git.heroku.com/faissal-simple-server.git"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "license": "MIT"
 }
