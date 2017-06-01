@@ -17,3 +17,7 @@ app.get('/getTest', function(req, res) {
 	console.log("Adding log ...");
   	res.status(200).json({"success": yes}); 
 });
+
+app.get('/', function(req, res) {
+  	res.status(200).json({"token": token}); 
+});
