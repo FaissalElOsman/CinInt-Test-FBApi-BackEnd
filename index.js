@@ -12,9 +12,10 @@ app.listen(app.get('port'), function() {
 });
 
 app.get('/getTest', function(req, res) {
+	console.log("1.1 : Adding log ...");
 	var query = require('url').parse(req.url,true).query;
 	token = query.token;
-	console.log("Adding log ...");
+	console.log("1.2 : Adding log ...");
   	res.status(200).json({"success": yes}); 
 });
 
